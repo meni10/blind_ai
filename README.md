@@ -1,41 +1,49 @@
-**🚦 Blind Object Detection – AI Assistant for the Visually Impaired**
+# Blind Object Detection – AI Assistant for the Visually Impaired 🚀
 
-An intelligent computer vision tool that detects objects in real-time and provides audio feedback for visually impaired users. Built with Python, TensorFlow, OpenCV, PyQt5, and pyttsx3 for voice output.
+An AI-powered assistive application that helps visually impaired people identify objects in their surroundings through real-time object detection and voice feedback.
 
-**⚙️ Key Features**
+The application uses a live webcam and a pre-trained YOLOv5 model to detect common objects and announces their names using text-to-speech.
 
-🎙️ Voice Feedback – Announces detected objects for blind users
+## ⚙️ Key Features
 
-📸 Real-Time Object Detection – Uses SSD MobileNet v3 model to detect common objects instantly
+- **Real-Time Object Detection:** Detects common objects using a pre-trained YOLOv5 model.
+- **Voice Feedback:** Announces detected object names using text-to-speech.
+- **Live Camera Support:** Captures surroundings through a webcam.
+- **Indoor & Outdoor Modes:** Provides separate modes for different environments.
+- **GUI Interface:** Provides a simple graphical interface using PyQt5.
 
-🏠 Indoor & Outdoor Modes – Optimized detection for different environments
+## 🧰 Technologies Used
 
-🖥️ GUI Interface – Simple and interactive PyQt5 interface
+- **Programming Language:** Python
+- **Object Detection:** YOLOv5
+- **Computer Vision:** OpenCV
+- **Deep Learning:** PyTorch
+- **GUI:** PyQt5
+- **Text-to-Speech:** pyttsx3
+- **Image Processing:** NumPy, Pillow
 
-**🧰 Tech Stack**
+## 🧠 How It Works
 
+1. Launch the application using the PyQt5 interface.
+2. Select Indoor or Outdoor mode.
+3. The webcam captures live video frames.
+4. OpenCV processes the captured frames.
+5. The pre-trained YOLOv5 model detects and identifies objects.
+6. The detected object names are passed to the pyttsx3 library.
+7. The application announces the detected objects through voice output.
+
+## 🎯 Project Impact
+
+- Helps visually impaired users identify surrounding objects.
+- Provides audio feedback without requiring users to read a screen.
+- Supports better environmental awareness.
+- Aims to improve independence in everyday activities.
+
+## ▶️ How to Run
+
+**Prerequisites:**
 - Python 3.8+
-- Computer Vision: TensorFlow, OpenCV
-- GUI: PyQt5
-- Text-to-Speech: pyttsx3
-- Data Handling: Numpy, Pillow
+- Webcam
+- Required Python libraries
 
-**⚡ Impact**
-
-🔄 Provides real-time object recognition
-
-🤖 Reduces dependency on others for daily navigation
-
-🎯 Enhances independence and safety for visually impaired users
-
-**🧠 How It Works**
-
-1. Load the GUI (`page1.py`) and select Indoor or Outdoor mode  
-2. The system accesses the camera or image input  
-3. SSD MobileNet v3 detects objects in real-time  
-4. `pyttsx3` converts detected object names to speech
-
-**🧑‍💻 Author**
-
-Meni – AI & Computer Vision Developer passionate about creating assistive technology for accessibility.  
-🌐 [GitHub](https://github.com/meni10/blind_ai)
+**1. Clone the repository
